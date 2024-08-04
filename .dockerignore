@@ -1,0 +1,10 @@
+/target
+/README.md
+
+.git
+.gitignore
+
+.env
+
+db/uploads/
+db/downloads/

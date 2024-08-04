@@ -1,0 +1,17 @@
+services:
+  server:
+    build: .
+    command: server
+    ports:
+      - "13337:13337"
+    environment:
+      - PORT=13337
+
+  client:
+    build: .
+    command: client
+    environment:
+      - SERVER_IP=192.168.178.22
+      - PORT=13337
+    stdin_open: true
+    tty: true
