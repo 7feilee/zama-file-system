@@ -59,7 +59,7 @@ Optimize the Merkle tree implementation to efficiently handle batch query reques
 - **Support file change by index (Insert/Delete/Update)**:
 
 
- Implement support for operations such as insertion, deletion, and updates of files at specific indices within the Merkle tree. This capability ensures that the tree can dynamically adjust its structure and hash values, similar to the operations performed by a Red-Black Tree. In this implementation, each leaf node represents a data block, while internal nodes store hash values computed from their children, ensuring data integrity and consistency throughout the tree.
+ Implement support for operations such as insertion, deletion, and updates of small files at specific indices within the Merkle tree. This capability ensures that the tree can dynamically adjust its structure and hash values, similar to the operations performed by a [Merkle Patricia Trie](https://ethereum.org/en/developers/docs/data-structures-and-encoding/patricia-merkle-trie/#example-trie). 
 
 - **Secure the Communication**:
 
